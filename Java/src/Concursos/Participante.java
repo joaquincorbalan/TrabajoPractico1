@@ -16,14 +16,6 @@ public class Participante {
     }
 
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre() {
-        this.nombre = nombre;
-    }
-
     public int getPuntaje() {
         return puntaje;
     }
