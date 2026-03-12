@@ -13,7 +13,7 @@ public class Restaurante {
         }
     }
 
-    public void agregarPedido(long numeroMesa, Pedido pedido) {
+    public void agregarPedido(long numeroMesa, Pedido pedido) throws Exception {
         Mesa mesa = mesas.stream()
                 .filter(m -> m.getNumeroMesa() == numeroMesa)
                 .findFirst()
@@ -21,7 +21,7 @@ public class Restaurante {
         if (mesa != null) {
             mesa.agregarPedido(pedido);
         } else {
-            System.out.println("Mesa no encontrada.");
+            throw new Exception("Mesa no encontrada.");
         }
     }
 

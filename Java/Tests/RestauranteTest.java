@@ -2,10 +2,11 @@ import Restaurante.*;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class RestauranteTest {
     @Test
-    void testCalcularDescuentoTarjetaViedma() {
+    void testCalcularDescuentoTarjetaViedma() throws Exception {
         // Inicializar
         Restaurante restaurante = new Restaurante();
         Mesa mesa = new Mesa(2);
@@ -29,7 +30,7 @@ public class RestauranteTest {
     }
 
     @Test
-    void testCalcularDescuentoTarjetaVisa() {
+    void testCalcularDescuentoTarjetaVisa() throws Exception {
         Restaurante restaurante = new Restaurante();
         Mesa mesa = new Mesa(2);
         Visa tarjeta = new Visa("1234567890123456", "Juan Perez", "Visa");
@@ -52,7 +53,7 @@ public class RestauranteTest {
     }
 
     @Test
-    void testCalcularDescuentoTarjetaMasterCard() {
+    void testCalcularDescuentoTarjetaMasterCard() throws Exception {
         Restaurante restaurante = new Restaurante();
         Mesa mesa = new Mesa(2);
         MasterCard tarjeta = new MasterCard("1234567890123456", "Juan Perez", "Viedma");
@@ -75,7 +76,7 @@ public class RestauranteTest {
     }
 
     @Test
-    void testCalcularDescuentoTarjetaComarcaPlus() {
+    void testCalcularDescuentoTarjetaComarcaPlus() throws Exception {
         Restaurante restaurante = new Restaurante();
         Mesa mesa = new Mesa(2);
         ComarcaPlus tarjeta = new ComarcaPlus("1234567890123456", "Juan Perez", "Viedma");
@@ -98,7 +99,7 @@ public class RestauranteTest {
     }
 
     @Test
-    void testPedidoVacio() {
+    void testPedidoVacio() throws Exception {
         Restaurante restaurante = new Restaurante();
         Mesa mesa = new Mesa(2);
         TarjetaViedma tarjetaCredito = new TarjetaViedma("1234567890123456", "Juan Perez", "Loco");
@@ -109,5 +110,15 @@ public class RestauranteTest {
         double total = restaurante.calcularCostoMesa(mesa.getNumeroMesa(), tarjetaCredito, 5);
         //Verificar
         assertEquals(0.0, total);
+    }
+
+    void testMesaNoEncontrada() throws Exception {
+        Restaurante restaurante = new Restaurante();
+        TarjetaViedma tarjetaCredito = new TarjetaViedma("1234567890123456", "Juan Perez", "Loco");
+        Pedido pedido = new Pedido();
+
+        //Entrenar
+        assertThrows(IllegalStateException.class, () -> restaurante.agregarPedido(999, pedido));
+
     }
 }

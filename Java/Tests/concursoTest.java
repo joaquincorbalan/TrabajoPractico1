@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.time.LocalDate;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class concursoTest {
 
@@ -17,9 +18,10 @@ public class concursoTest {
         Concurso concurso = new Concurso(fechaInicio, fechaFinal, LocalDate.now());
         //Entrenar
         concurso.agregarParticipante(p);
-        boolean resultado = concurso.agregarParticipante(p);
         //Verificar
-        assertEquals(false, resultado);
+        assertThrows(IllegalStateException.class, () -> concurso.agregarParticipante(p));
+
+
     }
 
     @Test
@@ -30,17 +32,15 @@ public class concursoTest {
         Participante p = new Participante("Juan", "12345678");
         Concurso concurso = new Concurso(fechaInicio, fechaFinal, LocalDate.now());
 
-        //Entrenar
-        boolean resultado = concurso.agregarParticipante(p);
-        //Verificar
-        assertEquals(false, resultado);
+        //Entrenar y verificar
+        assertThrows(IllegalStateException.class, () -> concurso.agregarParticipante(p));
     }
 
     @Test
     void testParticipanteIncribeFechaNormal() {
         //Inicializar
-        LocalDate fechaInicio = LocalDate.of(2026, 2, 10);
-        LocalDate fechaFinal = LocalDate.of(2026, 3, 20);
+        LocalDate fechaInicio = LocalDate.now().minusDays(5);
+        LocalDate fechaFinal = LocalDate.now().plusMonths(1);
         Participante p = new Participante("Juan", "12345678");
         Concurso concurso = new Concurso(fechaInicio, fechaFinal, LocalDate.now());
         //Entrenar
@@ -52,8 +52,8 @@ public class concursoTest {
     @Test
     void testParticipanteInscribeFechaInicial() {
         //Inicializar
-        LocalDate fechaInicio = LocalDate.of(2026, 3, 9);
-        LocalDate fechaFinal = LocalDate.of(2026, 3, 20);
+        LocalDate fechaInicio = LocalDate.now();
+        LocalDate fechaFinal = LocalDate.now().plusMonths(2);
         Participante p = new Participante("Juan", "12345678");
         //Pongo dos fechas inicio para que la fecha de inicio y el dia de hoy sea el mismo
         Concurso concurso = new Concurso(fechaInicio, fechaFinal, fechaInicio);

@@ -18,22 +18,24 @@ public class Concurso {
         this.participantes = new ArrayList<>();
     }
 
-    public boolean agregarParticipante(Participante participante) {
+    public void agregarParticipante(Participante participante) throws IllegalStateException {
         if (estaFueraDelPeriodo()) {
-            System.out.println("No se pueden agregar participantes después de la fecha final del concurso.");
-            return false;
+            throw new IllegalStateException("No se pueden inscribir participantes fuera del período del concurso.");
         }
 
-        if (participantes.stream().anyMatch(p -> p.getDNI().equals(participante.getDNI()))) {
-            System.out.println("El participante con DNI " + participante.getDNI() + " yamás está inscrito en el concurso.");
-            return false;
+        if (participanteYaInscrito(participante)) {
+            throw new IllegalStateException("El participante con DNI " + participante.getDNI() + " ya está inscrito en el concurso.");
         }
         if (esLaFechaInicial()) {
             participante.aumentarPuntaje(PUNTAJE_EXTRA);
         }
 
         participantes.add(participante);
-        return true;
+    }
+
+    private boolean participanteYaInscrito(Participante participante) {
+        return participantes.stream()
+                .anyMatch(p -> p.getDNI().equals(participante.getDNI()));
     }
 
     private boolean estaFueraDelPeriodo() {
