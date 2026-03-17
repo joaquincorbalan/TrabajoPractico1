@@ -8,9 +8,10 @@ public class Restaurante {
 
     public Restaurante() {
         mesas = new ArrayList<>();
-        for (int i = 1; i <= 10; i++) {
-            mesas.add(new Mesa(i));
-        }
+    }
+
+    public void agregarMesa(Mesa mesa) {
+        mesas.add(mesa);
     }
 
     public void agregarPedido(long numeroMesa, Pedido pedido) throws Exception {
