@@ -1,28 +1,24 @@
 package Restaurante;
 
-public class Comida {
-    public static enum TipoComida {
-        PLATO, BEBIDA
-    }
-
+public abstract class Comida {
     private String nombre;
-    private TipoComida tipo;
     private double precio;
 
-    public Comida(String nombre, double precio, TipoComida tipo) {
+
+    public Comida(String nombre, double precio) {
         this.nombre = nombre;
         this.precio = precio;
-        this.tipo = tipo;
     }
 
-    // Getters y Setters
-    public TipoComida getTipo() {
-        return tipo;
-    }
+    public abstract double calcularBebidas();
 
+    public abstract double calcularPlatos();
 
     public double getPrecio() {
         return precio;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
 }

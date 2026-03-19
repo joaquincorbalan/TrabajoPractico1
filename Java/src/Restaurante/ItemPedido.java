@@ -10,10 +10,13 @@ public class ItemPedido {
     }
 
     // Getters y Setters
-    public Comida getComida() {
-        return comida;
+    public double calcularPlatos() {
+        return comida.calcularPlatos() * this.cantidad;
     }
 
+    public double calcularBebidas() {
+        return comida.calcularBebidas() * cantidad;
+    }
 
     public double getPrecio() {
         return comida.getPrecio() * this.cantidad;

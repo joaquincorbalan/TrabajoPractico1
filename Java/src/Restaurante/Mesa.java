@@ -19,29 +19,9 @@ public class Mesa {
         }
 
         double costoTotal = pedido.calcularTotal();
-        double descuento = 0;
-
-        // Switch con pattern matching para identificar el tipo de tarjeta
-        switch (tarjeta) {
-            case Visa v -> {
-                descuento = tarjeta.calcularDescuento(pedido);
-
-            }
-            case MasterCard m -> {
-                descuento = tarjeta.calcularDescuento(pedido);
-
-            }
-            case ComarcaPlus c -> {
-                descuento = tarjeta.calcularDescuento(pedido);
-            }
-            case TarjetaViedma tv -> {
-                descuento = tarjeta.calcularDescuento(pedido);
-
-            }
-            default -> System.out.println("Tarjeta de crédito no reconocida");
-        }
-
+        double descuento = tarjeta.calcularDescuento(pedido);
         double costoFinal = (costoTotal - descuento) * (1 + propina / 100);
+
         return this.costoConsumido = Math.round(costoFinal * 100.0) / 100.0;
     }
 

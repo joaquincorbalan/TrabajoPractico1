@@ -13,10 +13,10 @@ public class RestauranteTest {
         restaurante.agregarMesa(mesa);
         TarjetaViedma tarjeta = new TarjetaViedma("1234567890123456", "Juan Perez", "Viedma");
         Pedido pedido = new Pedido();
-        Comida hamburguesa = new Comida("Hamburguesa", 10.0, Comida.TipoComida.PLATO);
-        Comida papasFritas = new Comida("Papas Fritas", 5.0, Comida.TipoComida.PLATO);
-        Comida gaseosa = new Comida("Gaseosa", 3.0, Comida.TipoComida.BEBIDA);
-        Comida cerveza = new Comida("Cerveza", 4.0, Comida.TipoComida.BEBIDA);
+        Comida hamburguesa = new Plato("Hamburguesa", 10.0);
+        Comida papasFritas = new Plato("Papas Fritas", 5.0);
+        Comida gaseosa = new Bebida("Gaseosa", 3.0);
+        Comida cerveza = new Bebida("Cerveza", 4.0);
         //Añadir pedidos
         pedido.añadirItem(new ItemPedido(hamburguesa, 2));
         pedido.añadirItem(new ItemPedido(papasFritas, 2));
@@ -39,10 +39,10 @@ public class RestauranteTest {
         restaurante.agregarMesa(mesa);
         Visa tarjeta = new Visa("1234567890123456", "Juan Perez", "Visa");
         Pedido pedido = new Pedido();
-        Comida hamburguesa = new Comida("Hamburguesa", 10.0, Comida.TipoComida.PLATO);
-        Comida papasFritas = new Comida("Papas Fritas", 5.0, Comida.TipoComida.PLATO);
-        Comida gaseosa = new Comida("Gaseosa", 3.0, Comida.TipoComida.BEBIDA);
-        Comida cerveza = new Comida("Cerveza", 4.0, Comida.TipoComida.BEBIDA);
+        Comida hamburguesa = new Plato("Hamburguesa", 10.0);
+        Comida papasFritas = new Plato("Papas Fritas", 5.0);
+        Comida gaseosa = new Bebida("Gaseosa", 3.0);
+        Comida cerveza = new Bebida("Cerveza", 4.0);
         //añadir pedidos
         pedido.añadirItem(new ItemPedido(hamburguesa, 2));
         pedido.añadirItem(new ItemPedido(papasFritas, 2));
@@ -66,10 +66,10 @@ public class RestauranteTest {
         restaurante.agregarMesa(mesa);
         MasterCard tarjeta = new MasterCard("1234567890123456", "Juan Perez", "Viedma");
         Pedido pedido = new Pedido();
-        Comida hamburguesa = new Comida("Hamburguesa", 10.0, Comida.TipoComida.PLATO);
-        Comida papasFritas = new Comida("Papas Fritas", 5.0, Comida.TipoComida.PLATO);
-        Comida gaseosa = new Comida("Gaseosa", 3.0, Comida.TipoComida.BEBIDA);
-        Comida cerveza = new Comida("Cerveza", 4.0, Comida.TipoComida.BEBIDA);
+        Comida hamburguesa = new Plato("Hamburguesa", 10.0);
+        Comida papasFritas = new Plato("Papas Fritas", 5.0);
+        Comida gaseosa = new Bebida("Gaseosa", 3.0);
+        Comida cerveza = new Bebida("Cerveza", 4.0);
         //Añadir pedidos
         pedido.añadirItem(new ItemPedido(hamburguesa, 2));
         pedido.añadirItem(new ItemPedido(papasFritas, 2));
@@ -78,8 +78,10 @@ public class RestauranteTest {
         //Calcular el resultado para sabe que valor esperar
         double platos = ((10 * 2) + (5 * 2)) * 0.02;
         double resultado = (((10 * 2) + (5 * 2) + 3 + 4) - platos) * 1.05;
+        System.out.println(resultado);
         //Entrenar
         restaurante.agregarPedido(mesa.getNumeroMesa(), pedido);
+        System.out.println(pedido.calcularPlatos());
         //Calcular el costo consumido con la tarjeta Viedma y una propina del 2, 3 o 5%
         double total = restaurante.calcularCostoMesa(mesa.getNumeroMesa(), tarjeta, 5);
         //Verificar
@@ -93,10 +95,10 @@ public class RestauranteTest {
         restaurante.agregarMesa(mesa);
         ComarcaPlus tarjeta = new ComarcaPlus("1234567890123456", "Juan Perez", "Viedma");
         Pedido pedido = new Pedido();
-        Comida hamburguesa = new Comida("Hamburguesa", 10.0, Comida.TipoComida.PLATO);
-        Comida papasFritas = new Comida("Papas Fritas", 5.0, Comida.TipoComida.PLATO);
-        Comida gaseosa = new Comida("Gaseosa", 3.0, Comida.TipoComida.BEBIDA);
-        Comida cerveza = new Comida("Cerveza", 4.0, Comida.TipoComida.BEBIDA);
+        Comida hamburguesa = new Plato("Hamburguesa", 10.0);
+        Comida papasFritas = new Plato("Papas Fritas", 5.0);
+        Comida gaseosa = new Bebida("Gaseosa", 3.0);
+        Comida cerveza = new Bebida("Cerveza", 4.0);
 
         pedido.añadirItem(new ItemPedido(hamburguesa, 2));
         pedido.añadirItem(new ItemPedido(papasFritas, 2));

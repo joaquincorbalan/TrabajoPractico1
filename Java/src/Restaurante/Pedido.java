@@ -13,15 +13,13 @@ public class Pedido {
 
     public double calcularBebidas() {
         return items.stream()
-                .filter(item -> item.getComida().getTipo() == Comida.TipoComida.BEBIDA)
-                .mapToDouble(ItemPedido::getPrecio)
+                .mapToDouble(item -> item.calcularBebidas())
                 .sum();
     }
 
     public double calcularPlatos() {
         return items.stream()
-                .filter(item -> item.getComida().getTipo() == Comida.TipoComida.PLATO)
-                .mapToDouble(ItemPedido::getPrecio)
+                .mapToDouble(item -> item.calcularPlatos())
                 .sum();
     }
 
