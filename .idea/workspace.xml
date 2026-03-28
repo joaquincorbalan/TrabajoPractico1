@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e35e9132-b63d-4a5e-b0ca-877620cd495b" name="Changes" comment="Correciones tell dont ask">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_9_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/Tests/Concurso/EnMemoriaExportConcurso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/Tests/Concurso/FakeExportMail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/Tests/Concurso/TestEnmemoriaExportMail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/Tests/Concurso/TestMemoriaConcurso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/Tests/Restaurante/EnMemoriaRestaurante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/Tests/Restaurante/TestEnMemoriaRestaurante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/Concursos/BdExport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/Concursos/ConnectionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/Concursos/Export.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/Concursos/FileExport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/Concursos/MailExport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/Concursos/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/Restaurante/BdExportRes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/Restaurante/Export.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/Restaurante/FileExport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/Restaurante/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/Tests/RestauranteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/Tests/Restaurante/RestauranteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/Tests/concursoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/Tests/Concurso/ConcursoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/Concursos/Concurso.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/Concursos/Concurso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/Concursos/Participante.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/Concursos/Participante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/Restaurante/Mesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/Restaurante/Mesa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/trabajopractico1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java/trabajopractico1.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/joaqu/IdeaProjects/TrabajoPractico1" value="3AVBVcp2YeM8C93j2Mu3iabrJwT" />
+      <entry key="_C:/Users/joaqu/IdeaProjects/TrabajoPractico1/Java" value="3AaipRMSQBkoAWhGz86WKQT42PM" />
+    </persistenceIdMap>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;joaquincorbalan&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/joaquincorbalan/TrabajoPractico1.git&quot;,
+    &quot;accountId&quot;: &quot;186c8a12-426d-425c-bfb2-ea6533deaf8d&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.1.8-hotspot/lib/src.zip!/java.base/java/util/ArrayList.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="3AVBVcp2YeM8C93j2Mu3iabrJwT" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.Restaurante.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.All in trabajopractico1 (1).executor": "Coverage",
+    "JUnit.All in trabajopractico1.executor": "Coverage",
+    "JUnit.ConcursoTest.executor": "Run",
+    "JUnit.Concursos in trabajopractico1.executor": "Coverage",
+    "JUnit.RestauranteTest.executor": "Run",
+    "JUnit.RestauranteTest.testCalcularDescuentoTarjetaViedma.executor": "Debug",
+    "JUnit.RestauranteTest.testMesaNoEncontrada.executor": "Run",
+    "JUnit.RestauranteTest.testPedidoVacio.executor": "Run",
+    "JUnit.TestEnMemoriaRestaurante.test1.executor": "Run",
+    "JUnit.TestEnmemoriaExportMail.prueba.executor": "Run",
+    "JUnit.TestMemoriaConcurso.test1.executor": "Run",
+    "JUnit.concursoTest.executor": "Coverage",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/joaqu/IdeaProjects/TrabajoPractico1/Java/B/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "actions.on.save"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\joaqu\IdeaProjects\TrabajoPractico1\Java\src\Concursos" />
+      <recent name="C:\Users\joaqu\IdeaProjects\TrabajoPractico1\Java\Tests" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="Restaurante" />
+      <recent name="Concursos" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Restaurante" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ConcursoTest">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Concursos.Main" />
+      <module name="trabajopractico1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Concursos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Restaurante.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Restaurante.Main" />
+      <module name="trabajopractico1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Restaurante.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConcursoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="trabajopractico1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Concurso.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Concurso" />
+      <option name="MAIN_CLASS_NAME" value="Concurso.ConcursoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestauranteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="trabajopractico1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Restaurante.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Restaurante" />
+      <option name="MAIN_CLASS_NAME" value="Restaurante.RestauranteTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestEnmemoriaExportMail.prueba" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="trabajopractico1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Concurso.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Concurso" />
+      <option name="MAIN_CLASS_NAME" value="Concurso.TestEnmemoriaExportMail" />
+      <option name="METHOD_NAME" value="prueba" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ConcursoTest" />
+        <item itemvalue="JUnit.RestauranteTest" />
+        <item itemvalue="JUnit.TestEnmemoriaExportMail.prueba" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Restaurante.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e35e9132-b63d-4a5e-b0ca-877620cd495b" name="Changes" comment="" />
+      <created>1772667882307</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1772667882307</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Tp 1 Listo">
+      <option name="closed" value="true" />
+      <created>1772833375041</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1772833375041</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Tp 1 Listo">
+      <option name="closed" value="true" />
+      <created>1772833415911</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1772833415911</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Tp 1 Listo">
+      <option name="closed" value="true" />
+      <created>1772834909981</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1772834909981</updated>
+    </task>
+    <task id="LOCAL-00004" summary="MiniUpdate">
+      <option name="closed" value="true" />
+      <created>1773345054125</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1773345054125</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Update: Se calcula el resultado esperado en vez de poner un numero calculado a mano y se añadio el metodo agregar mesa a restaurante">
+      <option name="closed" value="true" />
+      <created>1773760390238</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1773760390238</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Correciones tell dont ask">
+      <option name="closed" value="true" />
+      <created>1773961130358</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1773961130358</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Tp 1 Listo" />
+    <MESSAGE value="MiniUpdate" />
+    <MESSAGE value="Update: Se calcula el resultado esperado en vez de poner un numero calculado a mano y se añadio el metodo agregar mesa a restaurante" />
+    <MESSAGE value="Correciones tell dont ask" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correciones tell dont ask" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Java/B/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/TrabajoPractico1$All_in_trabajopractico1.ic" NAME="All in trabajopractico1 Coverage Results" MODIFIED="1772833711664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/TrabajoPractico1$All_in_trabajopractico1__1_.ic" NAME="All in trabajopractico1 (1) Coverage Results" MODIFIED="1774299003521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/TrabajoPractico1$concursoTest.ic" NAME="concursoTest Coverage Results" MODIFIED="1774296343180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/TrabajoPractico1$RestauranteTest.ic" NAME="RestauranteTest Coverage Results" MODIFIED="1774300277212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/TrabajoPractico1$Concursos_in_trabajopractico1.ic" NAME="Concursos in trabajopractico1 Coverage Results" MODIFIED="1772833652613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>Concursos.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>

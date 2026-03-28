@@ -5,17 +5,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Concurso {
+    private static int contadorId = 1;
+    private int id;
     private LocalDate fechaInicial;
     private LocalDate fechaFinal;
     private LocalDate fechaActual;
     private final int PUNTAJE_EXTRA = 10;
     private List<Participante> participantes;
+    private Export export;
 
-    public Concurso(LocalDate fechaInicial, LocalDate fechaFinal, LocalDate fechaActual) {
+    public Concurso(LocalDate fechaInicial, LocalDate fechaFinal, LocalDate fechaActual, Export export) {
+        this.id = contadorId++;
         this.fechaInicial = fechaInicial;
         this.fechaFinal = fechaFinal;
         this.fechaActual = fechaActual;
         this.participantes = new ArrayList<>();
+        this.export = export;
     }
 
     public void agregarParticipante(Participante participante) throws IllegalStateException {
@@ -31,6 +36,7 @@ public class Concurso {
         }
 
         participantes.add(participante);
+        export.guardarInscripcion(participante.getId(), this.id);
     }
 
     private boolean participanteYaInscrito(Participante participante) {
@@ -53,5 +59,9 @@ public class Concurso {
                 .findFirst()
                 .map(Participante::getPuntaje)
                 .orElse(0);
+    }
+
+    public static void resetContador() {
+        contadorId = 1;
     }
 }

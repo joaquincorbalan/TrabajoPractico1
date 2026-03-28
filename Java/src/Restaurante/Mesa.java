@@ -5,9 +5,11 @@ public class Mesa {
     private int capacidad;
     private Pedido pedido;
     private double costoConsumido;
+    private Export export;
 
-    public Mesa(int capacidad) {
+    public Mesa(int capacidad, Export export) {
         this.capacidad = capacidad;
+        this.export = export;
         this.costoConsumido = 0;
         numeroMesa++;
     }
@@ -21,8 +23,9 @@ public class Mesa {
         double costoTotal = pedido.calcularTotal();
         double descuento = tarjeta.calcularDescuento(pedido);
         double costoFinal = (costoTotal - descuento) * (1 + propina / 100);
-
-        return this.costoConsumido = Math.round(costoFinal * 100.0) / 100.0;
+        this.costoConsumido = Math.round(costoFinal * 100.0) / 100.0;
+        export.guardarOperacion(this.costoConsumido);
+        return this.costoConsumido;
     }
 
     public void agregarPedido(Pedido pedido) {
